@@ -1,6 +1,7 @@
 export default function MainContent() {
     return (
         <div className="main">
+
             <div className="card">
 
                 <h3>Reasons I love react</h3>
