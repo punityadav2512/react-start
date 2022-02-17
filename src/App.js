@@ -1,12 +1,21 @@
 import React from 'react';
-import Header from './Header';
-import MainContent from "./MainContent";
-import Footer from './Footer';
+import Header from './components/Header';
+import './App.css';
+// import MainContent from "./components/MainContent";
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+
+import Cards from './components/Cards';
 function App() {
   return (
     <div>
       <Header />
-      <MainContent />
+      {/* <MainContent /> */}
+      <div className="main">
+
+        <Hero />
+        <Cards />
+      </div>
       <Footer />
     </div>
   )
