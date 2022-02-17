@@ -5,6 +5,8 @@ import './App.css';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 
+// import Cards from './components/Cards';
+
 import Cards from './components/Cards';
 function App() {
   return (

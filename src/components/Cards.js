@@ -2,15 +2,21 @@ import React from 'react'
 import Card from './Card'
 import './cards.css';
 import cardImg from '../images/punit1.png';
+import data from '../data';
 
 function Cards() {
-    return (
-        <div className='cards'>
-            <Card img={cardImg} rating="5" reviewCount={6.0} country="USA" title="Rich Dad Poor Dad" price={50} />
-            <Card img={cardImg} rating="5" reviewCount={6.0} country="USA" title="Rich Dad Poor Dad" price={50} />
-            <Card img={cardImg} rating="5" reviewCount={6.0} country="USA" title="Rich Dad Poor Dad" price={50} />
-            <Card img={cardImg} rating="5" reviewCount={6.0} country="USA" title="Rich Dad Poor Dad" price={50} />
+    const cards = data.map(item => {
+        return <Card
+            key={item.id}
+            item={item}
+            coverImg={cardImg}
 
+        />
+    })
+    return (
+
+        <div className='cards'>
+            {cards}
         </div>
     )
 }
